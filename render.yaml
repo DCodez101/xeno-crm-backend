@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: xeno-crm-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false
+      - key: CHANNEL_SERVICE_URL
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
