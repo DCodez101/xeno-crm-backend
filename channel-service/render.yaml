@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: xeno-channel-service
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 4000
+      - key: CRM_RECEIPT_URL
+        sync: false  # Set this manually in Render dashboard after CRM is deployed
+      - key: DELIVERY_DELAY_MIN_MS
+        value: 1000
+      - key: DELIVERY_DELAY_MAX_MS
+        value: 8000
+      - key: PROB_DELIVERED
+        value: 0.80
+      - key: PROB_FAILED
+        value: 0.10
+      - key: PROB_OPENED
+        value: 0.45
+      - key: PROB_CLICKED
+        value: 0.20
+      - key: RECEIPT_MAX_RETRIES
+        value: 3
+      - key: RECEIPT_RETRY_DELAY_MS
+        value: 2000
