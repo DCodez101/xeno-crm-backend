@@ -1,6 +1,6 @@
 # XenoCRM — Backend Services
 
-AI-native Mini CRM for D2C fashion brands. Built for the Xeno SDE Internship Assignment 2026.
+AI-native Mini CRM for D2C fashion brands. Built for the Xeno FDE Internship Assignment 2026.
 
 ## Live URLs
 - **Frontend:** https://xeno-crm-frontend-six.vercel.app
